@@ -1,11 +1,15 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- PROJECT LOGO -->
 <br />
-    
 <p align="center">
-  <a href="https://github.com/cjoshi7/meteorological-query-tool">
-    <img src="images/icon.png" alt="Logo" width="150" height="150">
+  <a href="https://github.com/cjoshi7/covid19-date-selector">
+    <img src="images/logo.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h1 align="center">Meteorological Query Tool</h1>
+  <h1 align="center">COVID-19 Date Selector</h1>
 
   <p align="center">
     Visualize the spread of the coronavirus on a day-by-day basis.
@@ -13,11 +17,11 @@
     <a href="https://github.com/cjoshi7/covid19-date-selector"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://youtu.be/r9-8qcNwKmk">View Demo</a>
+    <a href="https://youtu.be/v6lsjcFfK9Q">View Demo</a>
     ·
-    <a href="https://github.com/cjoshi7/meteorological-query-tool">Report Bug</a>
+    <a href="https://github.com/cjoshi7/covid19-date-selector">Report Bug</a>
     ·
-    <a href="https://github.com/cjoshi7/meteorological-query-tool">Request Feature</a>
+    <a href="https://github.com/cjoshi7/covid19-date-selector">Request Feature</a>
   </p>
 </p>
 
@@ -40,7 +44,9 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -49,18 +55,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p align="center">
-  <a href="https://github.com/cjoshi7/meteorological-query-tool">
-    <img src="images/demo.PNG" alt="example-image" width=800 height=500>
-  </a>
-</p>
-
-The purpose of the MQT is to provide a statistical representation of climate data
-from 30 years ago to today from numerous meteorological stations across the United States. This is 
-done though the use of the National Climate Data Center's database and a web application to provide 
-a seamless user interface. All queries are conducted in log(n) time complexity due to the use of SQL
-indexes. The user can query data from a specific date or create a visualization of climate trends
-using the Matplotlib library.
+[![Product Name Screen Shot][product-screenshot]](https://github.com/cjoshi7/covid19-date-selector)
 
 ### Inspiration
 While researching for COVID-19 data, I noticed that all of the popular visualization resources either only showed the [current situation](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html), or showed a [quick timeline](https://kitware.github.io/covid-19-vis/). This is not very helpful for researching the number of cases in a specific county on any day as it provides too general of a visualization. Thus, I created a day-by-day visualization tool that allows researchers to query the data for a specific day in a user friendly and visually appealing way.
@@ -82,10 +77,10 @@ I learned the fundamentals of data science through cleaning and filtering data a
 
 
 ### Built With
-* [Flask](https://plotly.com/dash)
-* [SQLite3](https://getbootstrap.com)
-* [Bootstrap](https://bootstrap.com)
-* [jQuery](https://jquery.com)
+
+* [Dash](https://plotly.com/dash)
+* [Bootstrap](https://getbootstrap.com)
+
 
 ## Getting Started
 
@@ -93,7 +88,7 @@ No API key is needed to access the tool, so the application may be locally run t
 
 ### Prerequisites
 
-The Flask framework and SQLite3 RDBMS must be installed as a prerequisite.
+The prerequisite frameworks and libraries are dash, plotly, and pandas.
 * pip
   ```sh
   pip install requirements.txt
@@ -105,13 +100,13 @@ The Flask framework and SQLite3 RDBMS must be installed as a prerequisite.
    ```sh
    git clone https://github.com/cjoshi7/covid19-date-selector
    ```
-2. Install prerequisites
+2. Install prerequisite packages
    ```sh
    pip install requirements.txt
    ```
-4. Initialize a flask development server
-   ```JS
-   flask run
+4. Directly run the python file
+   ```sh
+   python covid19-date-selector/app.py
    ```
 
 
@@ -120,7 +115,7 @@ The Flask framework and SQLite3 RDBMS must be installed as a prerequisite.
 
 This tool can be used for research purposes to find the exact number of cases in a specific county on any day. It is useful to see the patterns of infection and death rate increases/decreases. For example, it can be seen that the number of infections skyrocketed in early January after the holiday season. The tool is useful for establishing patterns such as this.
 
-_For more examples, please refer to the [Documentation](https://github.com/cjoshi7/meteorological-query-tool)_
+_For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
@@ -128,27 +123,27 @@ _For more examples, please refer to the [Documentation](https://github.com/cjosh
 ## Roadmap
 
 __See the [open issues](https://github.com/cjoshi7/covid19-date-selector) for a list of proposed features (and known issues).__
-## TODO ##
-* Manipulate the DOM using jQuery and AJAX calls. When the submit button is pressed, make a GET request to the server using the input fields.
-    * PROBLEM: When the HTML form is submitted, the corresponding JS event listener doesnot reccognize the event, likely due to syntax error because of confusion between element vs id JS syntax. Figure out how to properly select DOM elements.
-* Allow a range of dates to be selected on the HTML file and render coordinate plot using the database response. Use this instead of table.
-* Change the padding and color of the Bootstrap classes in styles.css to center the input fields and make the background sky blue.
 <br>
-<p>
-  The following features will be implemented in the indefinite future:
-  <ol>
-    <li>
-      Expanded dataset to include:
-      <ul>
-        <li>Mask usage</li>
-        <li>Population density</li>
-        <li>Demographic breakdown</li>
-      </ul>
-    </li>
-    <li>Dark theme through altered CSS</li>
-    <li>An option to use the program in the command line</li>
-  </ol>
-</p>
+
+The following features will be implemented in the indefinite future:
+1. Expanded dataset to include:
+    - Mask usage
+    - Population Density
+    - Demographic breakdown
+2.  Dark theme
+3.  An option to use the program in the command line
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Any contributions to extend features are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/newFeature`)
+3. Commit your Changes (`git commit -m 'Add NewFeature'`)
+4. Push to the Branch (`git push origin feature/newFeature`)
+5. Open a Pull Request
 
 <!-- CONTACT -->
 ## Contact
@@ -158,19 +153,22 @@ Chinar Joshi - chinarjoshi7@gmail.com
 Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.com/cjoshi7/covid19-date-selector)
 
 
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [Virus Icon](https://dndi.org/diseases/covid-19/target-product-profile/)
+* [Readme Template](https://github.com/othneildrew/Best-README-Template)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
 [contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+[linkedin-url]: https://linkedin.com/in/chinarjoshi
+[product-screenshot]: images/deaths.png
