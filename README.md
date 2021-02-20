@@ -120,7 +120,7 @@ Any contributions to extend features are **greatly appreciated**.
 
 Chinar Joshi - chinarjoshi7@gmail.com
 
-Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.com/chinarjoshi/runoff-election-simulator)
+Project Link: [https://github.com/chinarjoshi/runoff-election-simulator](https://github.com/chinarjoshi/runoff-election-simulator)
 
 Linkedin: https://linkedin.com/in/chinar-joshi-905493207/
 
