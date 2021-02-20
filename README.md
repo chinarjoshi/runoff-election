@@ -1,27 +1,31 @@
 [![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
+    
 <p align="center">
-  <a href="https://github.com/cjoshi7/covid19-date-selector">
-    <img src="images/logo.png" alt="Logo" width="100" height="100">
+  <a href="https://github.com/chinarjoshi/meteorological-query-tool">
+    <img src="images/icon.png" alt="Logo" width="120" height="120">
   </a>
 
-  <h1 align="center">COVID-19 Date Selector</h1>
+  <h1 align="center">Meteorological Query Tool</h1>
 
   <p align="center">
-    Visualize the spread of the coronavirus on a day-by-day basis.
+    Query climate data from the NCDC's meteorological database.
     <br />
-    <a href="https://github.com/cjoshi7/covid19-date-selector"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/chinarjoshi/covid19-date-selector"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://youtu.be/v6lsjcFfK9Q">View Demo</a>
+    <a href="https://youtu.be/r9-8qcNwKmk">View Demo</a>
     ·
-    <a href="https://github.com/cjoshi7/covid19-date-selector">Report Bug</a>
+    <a href="https://github.com/chinarjoshi/meteorological-query-tool">Report Bug</a>
     ·
-    <a href="https://github.com/cjoshi7/covid19-date-selector">Request Feature</a>
+    <a href="https://github.com/chinarjoshi/meteorological-query-tool">Request Feature</a>
   </p>
 </p>
 
@@ -55,32 +59,30 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/cjoshi7/covid19-date-selector)
+<p align="center">
+  <a href="https://github.com/chinarjoshi/meteorological-query-tool">
+    <img src="images/demo.PNG" alt="example-image" width=850 height=500>
+  </a>
+</p>
 
 ### Inspiration
-While researching for COVID-19 data, I noticed that all of the popular visualization resources either only showed the [current situation](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html), or showed a [quick timeline](https://kitware.github.io/covid-19-vis/). This is not very helpful for researching the number of cases in a specific county on any day as it provides too general of a visualization. Thus, I created a day-by-day visualization tool that allows researchers to query the data for a specific day in a user friendly and visually appealing way.
+I noticed that it was difficult to find an API to query meteorological data for a specific region on a specific day, so I created a minimalist web API that allows the user to query climate data from 30 years ago to today from numerous meteorological stations across the United States. The targeted audiences are researchers who would like to obtain very specific data that is difficult to find in other places.
 
 ### What it does
-This is a web API to allow the user to visualize a snapshot of the COVID-19 situation in the USA on a specific day. The user can see exactly how many cases there were in a specific county in this snapshot of time. 
+The tool queries the National Climate Data Center's meteorological database and returns the data specified by the user in the form of a table. The queries are conducted in log(n) time due to the use of SQL indices, thus the application is very responsive.
 
 ### How I built it
-This application is built using Dash with Python, the Plotly library to generate the choropleth map, and the Bootstrap framework to quickly develop the CSS. The New York Time's COVID-19 dataset was used along with a JSON map of the United States from Plotly.
+This application is built using Flask with Python, jQuery with JavaScript to asyncronously update the website, and the Bootstrap framework to rapidly develop the CSS. The NCDC's meteorological database was used and installed in the form of a csv. The back-end stack is needed to make SQL queries to the included database.
 
 ### Challenges I ran into
-It was difficult to actually find the data in a usable form online, because it was either fragmented or contained irrelevant data to my purpose. This introduced me to the pandas libraries to clean and filter the dataset. I've also never worked with visualizations of datasets before, so the hardest part was actually starting.
-
-### Accomplishments that I'm proud of
-I created my first deployable web API and made a visually appealing application to solve a real world problem, while introducing me to data science concepts along the way.
-
-### What I learned
-I learned the fundamentals of data science through cleaning and filtering data and how to make useful visualizations by taking advantage of python's many data science libraries. I also learned how to use a new web application framework with Dash.
+This project was also developed for learning purposes as I was dipping my toes into web development, so it was challenging to build a cohesive product while simutaneously learninig what languages and technologies I needed to make it happen. However, in the end I learned about the various web framworks for Python and JavaScript, development stacks, and how to develop a web application.
 
 
 ### Built With
-
-* [Dash](https://plotly.com/dash)
-* [Bootstrap](https://getbootstrap.com)
-
+* [Flask](https://plotly.com/dash)
+* [SQLite3](https://getbootstrap.com)
+* [Bootstrap](https://bootstrap.com)
+* [jQuery](https://jquery.com)
 
 ## Getting Started
 
@@ -88,7 +90,7 @@ No API key is needed to access the tool, so the application may be locally run t
 
 ### Prerequisites
 
-The prerequisite frameworks and libraries are dash, plotly, and pandas.
+The Flask framework and SQLite3 RDBMS must be installed as a prerequisite.
 * pip
   ```sh
   pip install requirements.txt
@@ -96,43 +98,56 @@ The prerequisite frameworks and libraries are dash, plotly, and pandas.
 
 ### Installation
 
+#### Compile Source
+
 1. Clone the repo
    ```sh
-   git clone https://github.com/cjoshi7/covid19-date-selector
+   git clone https://github.com/chinarjoshi/meteorological-query-tool
    ```
-2. Install prerequisite packages
+2. Install prerequisites
    ```sh
    pip install requirements.txt
    ```
-4. Directly run the python file
+4. Initialize a flask development server
    ```sh
-   python covid19-date-selector/app.py
+   flask run
    ```
+
+#### Docker
+1. __TODO__
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This tool can be used for research purposes to find the exact number of cases in a specific county on any day. It is useful to see the patterns of infection and death rate increases/decreases. For example, it can be seen that the number of infections skyrocketed in early January after the holiday season. The tool is useful for establishing patterns such as this.
+This tool can be used for research purposes to find the meteorological data from a specified date and region.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+1. Select the station from the dropdown menu
+2. Input the date into the corresponding fields
+3. Select which datatypes to query from the database
+
+_For more examples, please refer to the [Documentation](https://github.com/chinarjoshi/meteorological-query-tool)_
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-__See the [open issues](https://github.com/cjoshi7/covid19-date-selector) for a list of proposed features (and known issues).__
-<br>
+### Features
+The following features will be implemented in the future.
+1. Add additional visualizations of the data using Matplotlib
+    - Temperature vs Time graph
+    - Bar graph of selected datatypes
 
-The following features will be implemented in the indefinite future:
-1. Expanded dataset to include:
-    - Mask usage
-    - Population Density
-    - Demographic breakdown
-2.  Dark theme
-3.  An option to use the program in the command line
+2. Dark theme
 
+__See the [open issues](https://github.com/chinarjoshi/covid19-date-selector) for a list of proposed features (and known issues).__
+
+### Source
+* Manipulate the DOM using jQuery and AJAX calls. When the submit button is pressed, make a GET request to the server using the input fields.
+    * PROBLEM: When the HTML form is submitted, the corresponding JS event listener doesnot reccognize the event, likely due to syntax error because of confusion between element vs id JS syntax. Figure out how to properly select DOM elements.
+* Allow a range of dates to be selected on the HTML file and render coordinate plot using the database response. Use this instead of table.
+* Change the padding and color of the Bootstrap classes in styles.css to center the input fields and change background color.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -150,25 +165,29 @@ Any contributions to extend features are **greatly appreciated**.
 
 Chinar Joshi - chinarjoshi7@gmail.com
 
-Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.com/cjoshi7/covid19-date-selector)
-
+Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.com/chinarjoshi/covid19-date-selector)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Virus Icon](https://dndi.org/diseases/covid-19/target-product-profile/)
+* [Thermometer Icon](https://dndi.org/diseases/covid-19/target-product-profile/)
 * [Readme Template](https://github.com/othneildrew/Best-README-Template)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 * [Animate.css](https://daneden.github.io/animate.css)
 * [Loaders.css](https://connoratherton.com/loaders)
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[contributors-shield]: https://img.shields.io/github/contributors/chinarjoshi/meteorological-query-tool?style=for-the-badge
+[contributors-url]: https://github.com/chinarjoshi/meteorological-query-tool/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/chinarjoshi/meteorological-query-tool?style=for-the-badge
+[forks-url]: https://github.com/chinarjoshi/meteorological-query-tool/network/members
+[stars-shield]: https://img.shields.io/github/stars/chinarjoshi/meteorological-query-tool?style=for-the-badge
+[stars-url]: https://github.com/chinarjoshi/meteorological-query-tool/stargazers
+[issues-shield]: https://img.shields.io/github/issues/chinarjoshi/meteorological-query-tool?style=for-the-badge
+[issues-url]: https://github.com/chinarjoshi/meteorological-query-tool/issues
+[license-shield]: https://img.shields.io/github/license/chinarjoshi/meteorological-query-tool?style=for-the-badge
+[license-url]: https://github.com/chinarjoshi/meteorological-query-tool/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/chinarjoshi
-[product-screenshot]: images/deaths.png
+[linkedin-url]: https://www.linkedin.com/in/chinar-joshi-905493207/
+[product-screenshot]: images/screenshot.png
