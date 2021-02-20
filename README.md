@@ -118,11 +118,9 @@ Any contributions to extend features are **greatly appreciated**.
 <!-- CONTACT -->
 ## Contact
 
-Chinar Joshi - chinarjoshi7@gmail.com
+Chinar Joshi - chinarjoshi7@gmail.com - [Linkedin](https://linkedin.com/in/chinar-joshi-905493207)
 
-Project Link: [https://github.com/chinarjoshi/runoff-election-simulator](https://github.com/chinarjoshi/runoff-election-simulator)
-
-Linkedin: https://linkedin.com/in/chinar-joshi-905493207/
+Project Link: [Github](https://github.com/chinarjoshi/runoff-election-simulator)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
