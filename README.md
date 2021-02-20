@@ -9,23 +9,23 @@
 <br />
     
 <p align="center">
-  <a href="https://github.com/chinarjoshi/meteorological-query-tool">
+  <a href="https://github.com/chinarjoshi/runoff-election-simulator">
     <img src="images/icon.png" alt="Logo" width="120" height="120">
   </a>
 
-  <h1 align="center">Meteorological Query Tool</h1>
+  <h1 align="center">Runoff Election Simulator</h1>
 
   <p align="center">
-    Query climate data from the NCDC's meteorological database.
+    Simulate a runoff election in the command line
     <br />
-    <a href="https://github.com/chinarjoshi/covid19-date-selector"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/chinarjoshi/runoff-election-simulator"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://youtu.be/r9-8qcNwKmk">View Demo</a>
     ·
-    <a href="https://github.com/chinarjoshi/meteorological-query-tool">Report Bug</a>
+    <a href="https://github.com/chinarjoshi/runoff-election-simulator">Report Bug</a>
     ·
-    <a href="https://github.com/chinarjoshi/meteorological-query-tool">Request Feature</a>
+    <a href="https://github.com/chinarjoshi/runoff-election-simulator">Request Feature</a>
   </p>
 </p>
 
@@ -60,7 +60,7 @@
 ## About The Project
 
 <p align="center">
-  <a href="https://github.com/chinarjoshi/meteorological-query-tool">
+  <a href="https://github.com/chinarjoshi/runoff-election-simulator">
     <img src="images/demo.PNG" alt="example-image" width=850 height=500>
   </a>
 </p>
@@ -102,7 +102,7 @@ The Flask framework and SQLite3 RDBMS must be installed as a prerequisite.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chinarjoshi/meteorological-query-tool
+   git clone https://github.com/chinarjoshi/runoff-election-simulator
    ```
 2. Install prerequisites
    ```sh
@@ -126,7 +126,7 @@ This tool can be used for research purposes to find the meteorological data from
 2. Input the date into the corresponding fields
 3. Select which datatypes to query from the database
 
-_For more examples, please refer to the [Documentation](https://github.com/chinarjoshi/meteorological-query-tool)_
+_For more examples, please refer to the [Documentation](https://github.com/chinarjoshi/runoff-election-simulator)_
 
 
 
@@ -141,7 +141,7 @@ The following features will be implemented in the future.
 
 2. Dark theme
 
-__See the [open issues](https://github.com/chinarjoshi/covid19-date-selector) for a list of proposed features (and known issues).__
+__See the [open issues](https://github.com/chinarjoshi/runoff-election-simulator) for a list of proposed features (and known issues).__
 
 ### Source
 * Manipulate the DOM using jQuery and AJAX calls. When the submit button is pressed, make a GET request to the server using the input fields.
@@ -165,7 +165,7 @@ Any contributions to extend features are **greatly appreciated**.
 
 Chinar Joshi - chinarjoshi7@gmail.com
 
-Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.com/chinarjoshi/covid19-date-selector)
+Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.com/chinarjoshi/runoff-election-simulator)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
@@ -178,16 +178,16 @@ Project Link: [https://github.com/cjoshi7/covid19-date-selector](https://github.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/chinarjoshi/meteorological-query-tool?style=for-the-badge
-[contributors-url]: https://github.com/chinarjoshi/meteorological-query-tool/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/chinarjoshi/meteorological-query-tool?style=for-the-badge
-[forks-url]: https://github.com/chinarjoshi/meteorological-query-tool/network/members
-[stars-shield]: https://img.shields.io/github/stars/chinarjoshi/meteorological-query-tool?style=for-the-badge
-[stars-url]: https://github.com/chinarjoshi/meteorological-query-tool/stargazers
-[issues-shield]: https://img.shields.io/github/issues/chinarjoshi/meteorological-query-tool?style=for-the-badge
-[issues-url]: https://github.com/chinarjoshi/meteorological-query-tool/issues
-[license-shield]: https://img.shields.io/github/license/chinarjoshi/meteorological-query-tool?style=for-the-badge
-[license-url]: https://github.com/chinarjoshi/meteorological-query-tool/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/chinarjoshi/runoff-election-simulator?style=for-the-badge
+[contributors-url]: https://github.com/chinarjoshi/runoff-election-simulator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/chinarjoshi/runoff-election-simulator?style=for-the-badge
+[forks-url]: https://github.com/chinarjoshi/runoff-election-simulator/network/members
+[stars-shield]: https://img.shields.io/github/stars/chinarjoshi/runoff-election-simulator?style=for-the-badge
+[stars-url]: https://github.com/chinarjoshi/runoff-election-simulator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/chinarjoshi/runoff-election-simulator?style=for-the-badge
+[issues-url]: https://github.com/chinarjoshi/runoff-election-simulator/issues
+[license-shield]: https://img.shields.io/github/license/chinarjoshi/runoff-election-simulator?style=for-the-badge
+[license-url]: https://github.com/chinarjoshi/runoff-election-simulator/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/chinar-joshi-905493207/
 [product-screenshot]: images/screenshot.png
