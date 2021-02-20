@@ -84,10 +84,6 @@ This tool simulates a runoff election that is excecuted in the command line. An 
 
 This tool can be used to simulate a runoff election with any number of candidates and voters.
 
-```sh
-./runoff-election-simulator/runoff <candidate 1 name> <candidate 2 name> ...
-```
-
 _For more examples, please refer to the [Documentation](https://github.com/chinarjoshi/runoff-election-simulator)_
 
 <!-- ROADMAP -->
