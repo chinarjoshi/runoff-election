@@ -98,6 +98,12 @@ The following features will be implemented in the future.
 __See the [open issues](https://github.com/chinarjoshi/runoff-election-simulator) for a list of proposed features (and known issues).__
 
 
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
