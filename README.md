@@ -10,7 +10,7 @@
     
 <p align="center">
   <a href="https://github.com/chinarjoshi/runoff-election-simulator">
-    <img src="images/icon.png" alt="Logo" width="120" height="120">
+    <img src="images/logo.svg" alt="Logo" width="175" height="130">
   </a>
 
   <h1 align="center">Runoff Election Simulator</h1>
