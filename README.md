@@ -56,16 +56,10 @@
 ## About The Project
 
 ### Inspiration
-I noticed that it was difficult to find an API to query meteorological data for a specific region on a specific day, so I created a minimalist web API that allows the user to query climate data from 30 years ago to today from numerous meteorological stations across the United States. The targeted audiences are researchers who would like to obtain very specific data that is difficult to find in other places.
+After seeing our local Georgia Senate race turn to runoff, I was curious about the difference between runoff elections and the standard plurality elections, so I created this educational tool to visualize the differences.
 
 ### What it does
-The tool queries the National Climate Data Center's meteorological database and returns the data specified by the user in the form of a table. The queries are conducted in log(n) time due to the use of SQL indices, thus the application is very responsive.
-
-### How I built it
-This application is built using Flask with Python, jQuery with JavaScript to asyncronously update the website, and the Bootstrap framework to rapidly develop the CSS. The NCDC's meteorological database was used and installed in the form of a csv. The back-end stack is needed to make SQL queries to the included database.
-
-### Challenges I ran into
-This project was also developed for learning purposes as I was dipping my toes into web development, so it was challenging to build a cohesive product while simutaneously learninig what languages and technologies I needed to make it happen. However, in the end I learned about the various web framworks for Python and JavaScript, development stacks, and how to develop a web application.
+This tool simulates a runoff election that is excecuted in the command line. An indefinite number of candidates can be input as a command line argument, and any number of votes can be given.
 
 
 ## Getting Started
