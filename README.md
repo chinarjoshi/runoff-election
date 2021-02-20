@@ -70,8 +70,6 @@ This project was also developed for learning purposes as I was dipping my toes i
 
 ## Getting Started
 
-No API key is needed to access the tool, so the application may be locally run through the python file.
-
 1. Clone the repo
    ```sh
    git clone https://github.com/chinarjoshi/runoff-election-simulator
@@ -86,7 +84,7 @@ No API key is needed to access the tool, so the application may be locally run t
 
 <p align="center">
   <a href="https://github.com/chinarjoshi/runoff-election-simulator">
-    <img src="images/output.png" alt="example-image" width=850 height=500>
+    <img src="images/output.png" alt="example-image" width=500 height=500>
   </a>
 </p>
 
