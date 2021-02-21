@@ -95,7 +95,7 @@ The following features will be implemented in the future.
 2. Format functionality as a website
 3. View past election results with a web API
 
-__See the [open issues](https://github.com/chinarjoshi/runoff-election-simulator) for a list of proposed features (and known issues).__
+__See the [open issues](https://github.com/chinarjoshi/runoff-election-simulator/issues) for a list of proposed features (and known issues).__
 
 
 <!-- LICENSE -->
