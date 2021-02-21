@@ -23,9 +23,9 @@
     <br />
     <a href="https://youtu.be/_txWoqk76nA">View Demo</a>
     ·
-    <a href="https://github.com/chinarjoshi/runoff-election-simulator">Report Bug</a>
+    <a href="https://github.com/chinarjoshi/runoff-election-simulator/issues">Report Bug</a>
     ·
-    <a href="https://github.com/chinarjoshi/runoff-election-simulator">Request Feature</a>
+    <a href="https://github.com/chinarjoshi/runoff-election-simulator/issues">Request Feature</a>
   </p>
 </p>
 
