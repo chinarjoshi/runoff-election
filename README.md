@@ -125,6 +125,7 @@ Project Link: [Github](https://github.com/chinarjoshi/runoff-election-simulator)
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Debate Icon](https://dndi.org/diseases/covid-19/target-product-profile/)
+* [CS50 Week 3](https://cs50.harvard.edu/x/2021/weeks/3/)
 * [Readme Template](https://github.com/othneildrew/Best-README-Template)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
